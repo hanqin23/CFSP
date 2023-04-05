@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .navigation {
+    display: flex;
+    height: 50px;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+@keyframes changeColor{
+    0% {
+        background-color:lightblue;
+    }
+    60% {
+        background-color: darkseagreen;
+    }
+    80% {
+        background-color:coral;
+    }
+    100% {
+        background-color: khaki;
+    }
+}
+
+.guidetext {
+    padding-top: 0.7%;
+    width: 25%;
+    font-size: 2vh;
+    color: white;
+    background-color: tomato;
+    
+}
+.guidetext:hover {
+    animation: changeColor 3s;
+}
