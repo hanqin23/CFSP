@@ -15,12 +15,12 @@ console.log(adjective)
 
 // Place it into the sentence
 
+let paragraph = document.getElementById("sentencedisplay")
+const btn = document.querySelector(".button");
 
-let sentence = `My ${noun} leaps ${adjective} when I ${verb} a rainbow in the sky`;
+function  generatesentence(){
+    let sentence = `My ${noun} leaps ${adjective} when I ${verb} a rainbow in the sky`;
+    paragraph.textcontent= `${sentence}`
+}
 
-
-
-document.getElementById("sentencedisplay").innerHTML= sentence;
-function click(){document.sentence}
-
-console.log(sentence)
+btn.addEventListener("click", generatesentence)
