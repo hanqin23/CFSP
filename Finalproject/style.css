@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Orbitron';
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: 'Orbitron';
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #0ff,
+               0 0 70px #0ff,
+               0 0 80px #0ff,
+               0 0 100px #0ff,
+               0 0 150px #0ff;
+}
+
+
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photos-container img {
+  width: 20%;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.photos-container img:hover {
+  transform: scale(2);
+  animation-play-state: paused;
+}
+
+.sort-container {
+  font-family: 'Orbitron';
+  text-align: center;
+  margin: 20px;
+}
+
+.sort-container select {
+  font-family: 'Orbitron';
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  cursor: pointer;
+}

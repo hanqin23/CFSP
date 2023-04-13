@@ -14,13 +14,18 @@ console.log(verb)
 console.log(adjective)
 
 // Place it into the sentence
-
 let paragraph = document.getElementById("sentencedisplay")
-const btn = document.querySelector(".button");
 
-function  generatesentence(){
+function generatesentence() {
+    // Pick a random element from each array
+    let noun = nouns[Math.floor(Math.random()*nouns.length)];
+    let verb = verbs[Math.floor(Math.random()*verbs.length)];
+    let adjective = adjectives[Math.floor(Math.random()*adjectives.length)];
+  
+    // Place it into the sentence
     let sentence = `My ${noun} leaps ${adjective} when I ${verb} a rainbow in the sky`;
-    paragraph.textcontent= `${sentence}`
-}
+    paragraph.textContent = sentence;
+  }
 
-btn.addEventListener("click", generatesentence)
+const btn = document.querySelector(".button");
+btn.addEventListener("click", generatesentence);
